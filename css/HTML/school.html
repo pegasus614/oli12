@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CampusWork USA</title>
+  <link rel="stylesheet" href="../school.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="logo">INIZIO ENGAGE USA</div>
+  <div class="menu-toggle">&#9776;</div>
+  <div class="menu">
+    <a href="#home">Home</a>
+    <a href="#jobs">Jobs</a>
+    <a href="#schools">Schools</a>
+    <a href="#how">How it Works</a>
+    <a href="#resources">Resources</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h2>Employment Opportunities for College Students in the United States</h2>
+  <p>
+    inizio engage USA connects college students with verified employment opportunities
+    through partnered universities, employers, and career programs across the U.S.
+  </p>
+  <button onclick="scrollToJobs()">Explore Jobs</button>
+  
+</section>
+
+<!-- back to the top -->
+<button id="backToTop">&#8679;</button>
+
+<!-- JOBS -->
+<section id="jobs" class="section">
+  <h2>Student Employment Opportunities</h2>
+
+  <!-- Search & Filter -->
+  <div class="job-filters">
+    <input type="text" id="searchInput" placeholder="Search jobs...">
+    <select id="jobTypeFilter">
+      <option value="all">All Job Types</option>
+      <option value="On-Campus">On-Campus</option>
+      <option value="Off-Campus">Off-Campus</option>
+      <option value="Internship">Internship</option>
+      <option value="Work-Study">Work-Study</option>
+    </select>
+    <select id="locationFilter">
+      <option value="all">All Locations</option>
+      <option value="Campus A">Campus A</option>
+      <option value="Campus B">Campus B</option>
+      <option value="Campus C">Campus C</option>
+    </select>
+  </div>
+
+  <div class="card-grid" id="jobCards">
+    <!-- JS will populate job cards dynamically -->
+  </div>
+</section>
+
+<section id="schools" class="section alt">
+  <h2>Partnered Colleges & Universities</h2>
+
+  <!-- Featured carousel -->
+<div class="school-carousel">
+  <div class="school"><img src="/image/harvard.webp" alt="Harvard University"></div>
+  <div class="school"><img src="/image/mit.webp" alt="MIT"></div>
+  <div class="school"><img src="/image/StanfordUniversity.webp" alt="Stanford University"></div>
+  <div class="school"><img src="/image/ucla.webp" alt="UCLA"></div>
+</div>
+
+<!-- Full grid of schools -->
+<div class="school-grid">
+  <div class="school"><img src="/image/ColumbiaUniversity.webp" alt="Columbia University"></div>
+  <div class="school"><img src="/image/NewYorkUniversity.webp" alt="New York University"></div>
+  <div class="school"><img src="/image/UniversityofChicago.webp" alt="University of Chicago"></div>
+  <div class="school"><img src="/image/YaleUniversity.webp" alt="Yale University"></div>
+  <div class="school"><img src="/image/PrincetonUniversity.webp" alt="Princeton University"></div>
+  <div class="school"><img src="/image/UCBerkeley.webp" alt="UC Berkeley"></div>
+  <div class="school"><img src="/image/mdc.webp" alt="Miami Dade College"></div>
+</div>
+
+    <!-- Add more schools here -->
+  </div>
+</section>
+
+<!-- STUDENT IMPACT SECTION -->
+<section id="impact" class="section alt">
+  <h2>Students Who Benefited</h2>
+  <div class="impact-counter">
+    <div class="impact-card">
+      <div class="impact-icon">
+      <img 
+      src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
+      alt="Student Icon" 
+      onerror="this.onerror=null;this.src='https://via.placeholder.com/48?text=?';"
+  />
+      </div>
+      <h3 class="counter" data-target="2450">0</h3>
+      <p>Enrolled Students</p>
+    </div>
+    <div class="impact-card">
+      <div class="impact-icon">
+        <img src="https://img.icons8.com/fluency/48/000000/graduation-cap.png" alt="Graduates"/>
+      </div>
+      <h3 class="counter" data-target="1500">0</h3>
+      <p>Graduated Students</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section">
+  <h2>How Student Employment Works</h2>
+  <div class="steps">
+    <div class="step">
+      <span>1</span>
+      <p>Student enrolls in an accredited U.S. college or university.</p>
+    </div>
+    <div class="step">
+      <span>2</span>
+      <p>Eligibility is verified based on enrollment and visa status (if applicable).</p>
+    </div>
+    <div class="step">
+      <span>3</span>
+      <p>Student explores approved job opportunities through the platform.</p>
+    </div>
+    <div class="step">
+      <span>4</span>
+      <p>Employment begins in compliance with U.S. student labor regulations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources" class="section alt">
+  <h2>Student Resources</h2>
+  <p>
+    Learn about employment rules, work hours, taxes, resumes, and legal
+    requirements for students working in the United States.
+  </p>
+  <div class="resources">
+    <p>• Resume & Interview Guides</p>
+    <p>• CPT & OPT Information</p>
+    <p>• Work Authorization Basics</p>
+    <p>• Career Planning Tools</p>
+  </div>
+</section>
+
+<button id="googleFormBtn" style="margin-left: 550px; margin-top: 10px;">Apply Here</button>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2023 INIZIO ENGAGE USA. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a> |
+      <a href="#jobs">Jobs</a> |
+      <a href="#schools">Schools</a> |
+      <a href="#resources">Resources</a>
+    </div>
+    <div class="newsletter">
+      <input type="email" placeholder="Subscribe to newsletter">
+      <button>Subscribe</button>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="../HTML/school.js"></script>
+<script src="../js/jobs.js"></script>
+</body>
+</html>
